@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta  name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body  {
+
+
+
+    ;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 16px;
+  margin-top: 30px;
+  /* height: 1500px; /* Used in this example to enable scrolling */ */
+}
+.text{
+  text-align: center;
+  font-size: 130px;
+  color: white
+}
+</style>
+</head>
+<body>
+  <div class="navbar ">
+    <a href="index.html">Home</a>
+    <a href="#Courses.html">Courses</a>
+  </div>
+
+
+<div class="main">
+  <table>
+    <!--Each <tr> is a row-->
+    <tbody><tr>
+      <!--Each <th> or <td> is a cell.
+        The number of cells in a row determines the number of columns in the table.
+      -->
+      <th>Course Number</th>
+      <th>Course Title</th>
+      <th>Semester Taken</th>
+    </tr>
+    <tr>
+      <!--A <td> or cell can span multiple columns using the colspan attribute-->
+      <td class="enrollheader" colspan="3">For Credit</td>
+    </tr>
+    <!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
+    <tr class="currentlytaking">
+      <td><a href="http://stellar.mit.edu/S/course/6/sp14/6.813/index.html">CSC XXX</a></td>
+      <td>User In,terface Design</td>
+      <td>Spring 2018</td>
+    </tr>
+    <tr>
+      <td><a href="http://ai6034.mit.edu/fall12/index.php?title=Main_Page">CSC XXX</a></td>
+      <td>Artificial Intelligence</td>
+      <td>Fall 2018</td>
+    </tr>
+    <tr>
+      <td><a href="http://stellar.mit.edu/S/course/6/fa13/6.006/">6.006</a></td>
+      <td>Introduction to Algorithms</td>
+      <td>Fall 2018</td>
+    </tr>
+    <tr>
+      <td class="enrollheader" colspan="3">My lovly classes</td>
+    </tr>
+    <tr>
+      <td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
+      <td>Machine Learning</td>
+      <td>Fall 2013</td>
+    </tr>
+    <tr>
+      <td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
+      <td>Database Systems</td>
+      <td>Fall 2012</td>
+    </tr>
+  </tbody></table>
+</div>
+
+</body>
+</html>
